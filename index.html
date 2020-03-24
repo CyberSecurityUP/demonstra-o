@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- developed by: Ítalo Araújo - Front-End Developer     -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Cyber Security Mentors</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+
+    <header>
+        <!-- LOGO -->
+        <div class="logo"><li><a href="https://www.facebook.com/cybersecup/" target="_blank"> <img src="img/Logo Comp. Sombra cinza.png" alt="Logo da Cyber Security UP"> </a></li></div>
+    </header>
+
+    </header>
+            <!-- WELLCOME MENSAGE FOR USERS -->
+            <section class="wellcome">
+
+                    <figure>
+                        <img src="img/PERFILBOFCC.jpg" alt="">
+                    </figure>
+                    
+                    <article>
+                        <p>Welcome to Cyber Security Mentors. Precisa de ajuda? Mande um e-mail para mim</p>
+                        <br><br>
+                        <h1>mentorcybersecup@gmail.com</h1>
+						<br>
+						<h1>Idealizador: Joas Antonio</h1>
+						<br>
+						<h1>Nosso objetivo é tirar dúvidas sobre a área de segurança! Não ajudamos em roubo de informações ou na realização de ataques, não insista!</h1>
+                    </article>
+        
+                    <!-- SCRIPTS FOR ANIMATION -->
+                    <script>
+                        function typeWriter(elemento) {
+                            const textoArray = elemento.innerHTML.split('');
+                            elemento.innerHTML = '';
+                            textoArray.forEach((letra, i) => {
+                            setTimeout(() => elemento.innerHTML += letra, 40 * i);
+                            });
+                        }
+                
+                        // Se estiver tendo problemas com performance, utilize o FOR loop como abaixo no local do forEach
+                        // function typeWriter(elemento) {
+                        //   const textoArray = elemento.innerHTML.split('');
+                        //   elemento.innerHTML = '';
+                        //   for(let i = 0; i < textoArray.length; i++) {
+                        //     setTimeout(() => elemento.innerHTML += textoArray[i], 75 * i);
+                        //   }
+                        // }
+                
+                        const wellcomeMensege = document.querySelector ('p');
+                        const down = document.querySelector ('h1');
+                        typeWriter(wellcomeMensege);
+                        typeWriter(down);
+                    </script>
+        
+                </section>
+        
+  
+
+    <footer>developed by:<a href="https://www.facebook.com/web.dev.zzone/" target="_blank">Ítalo Araújo - Front-End Developer</a></footer>
+
+</body>
+</html>

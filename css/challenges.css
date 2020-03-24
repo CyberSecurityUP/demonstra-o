@@ -1,0 +1,78 @@
+/* <!-- developed by: Ãtalo AraÃºjo - Front-End Developer     --> */
+
+*{margin: 0; padding: 0; color:#ffffff; text-decoration: none; list-style: none}
+a{cursor: pointer; color: rgb(255, 255, 255)}
+a:hover, .logo a:hover{color:rgb(255, 0, 0)}
+
+/* FONTS  */
+@font-face{font-family: trench; src: url("../fonts/trench100free.ttf")}
+/* MAIN BACKGROUND */
+body{background: url("../img/background.jpeg"); background-size: cover; background-position: center; background-repeat: no-repeat;}
+
+/* HEADER */
+header{display: flex; justify-content: space-between;  align-items: center; background-color: rgba(0, 0, 0, 0.473);  padding: 5px 50px}
+header .logo a img{ width: 150px; margin-right: 10px}
+header p{font-size: 1.1rem; font-family: trench;}
+
+/* CONTENT MAIN */
+.content-main{background-color: rgba(0, 0, 0, 0.473); width: 100%;height: 80vh; display: flex; justify-content: space-between; flex-wrap: wrap;}
+
+/* CHARLLENGE INFORMATION */
+.information-contener{width: 50%; display: flex; justify-content: center; padding-left: 35px}
+
+.information-content{background-color: rgba(0, 0, 0, 0.801); width: 600px;  padding: 80px 20px; border-radius: 10px; align-self: center; }
+.information-content h1{font-family: trench; color: #ffffff; text-align: center; font-size: 3rem}
+.information-content h2{font-family: trench; color: #ffffff; text-align: center; font-size: 1.8rem}
+
+/* ANIMATION */
+h1::after,h2::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
+@keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+}
+
+/* LOGIN ZONE */
+.login-content{width: 40%; display: flex; justify-content: flex-end;}
+
+.login-zone{background-color: rgba(0, 0, 0, 0.801); width: 400px; height: 170px ; padding:5px ; border-radius: 0 0 10px 10px; transition: all .4s; display: flex; padding: 10px}
+.login-zone:hover{padding-top: 15px;}
+.login-zone figure{width: 35%; margin-right: 20px}
+.login-zone img{width: 100%; border-radius: 10px; margin-right: 10px}
+.login-zone form{display: flex; flex-direction: column; width: 35%;}
+#inputPassword{ width: 100%; padding: 10px 30px; border-radius: 10px; border: none; margin-bottom: 20px; background-color:#222; color: #ffffff}
+#inputPassword:hover{color: rgb(255, 0, 0)}
+#btn{width: 100px; border-radius: 10px;border: none; padding:  10px; background-color:#222;color: #ffffff; opacity: 0.9; cursor: pointer}
+#btn:hover{opacity: 1; color: rgb(255, 0, 0)}
+
+footer{background-color: rgba(0, 0, 0, 0.473); padding: 20px 50px; font-size: 1.1rem; height: 5vh; font-family: trench; display: flex; align-items: center}
+
+@media(max-width:900px){
+  .bg-video{visibility: hidden;}
+  /* CONTENT MAIN */
+  .content-main{flex-direction: column-reverse; justify-content: space-between;}
+
+  /* CHARLLENGE INFORMATION */
+  .information-contener{width: 100%; display: flex; justify-content: center;  height: 55vh;}
+
+  /* LOGIN ZONE */
+  .login-content{width: 100%; display: flex; justify-content: flex-end;}
+}
+
+@media(max-width:480px){
+  /* HEADER */
+  header{ padding: 5px 10px}
+
+  /* FOOTER */
+  footer{padding: 20px 10px;}
+}

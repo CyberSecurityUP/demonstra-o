@@ -1,0 +1,49 @@
+/* <!-- developed by: Ãtalo AraÃºjo - Front-End Developer     --> */
+
+*{margin: 0; padding: 0; color:#ffffff; text-decoration: none; list-style: none}
+a{cursor: pointer; color: rgb(255, 255, 255)}
+a:hover, .challenges li a h1:hover{color:rgb(255, 0, 0)}
+
+/* FONTS  */
+@font-face{font-family: trench; src: url("../fonts/trench100free.ttf")}
+/* HEADER */
+header{display: flex; justify-content: space-between; align-items: center;background-color: #000;  padding: 5px 50px}
+header .logo a img{ width: 150px; margin-right: 10px}
+
+/* WELLCOME FRAME */
+.wellcome {background-color: #000; width: 100%; height: 100vh; display: flex; align-items: center; justify-content: space-around}
+.wellcome figure{width: 30%;}
+.wellcome figure img{width: 100%;}
+
+.wellcome article{width: 50%;}
+.wellcome article p{font-family:trench ;font-size: 3rem;}
+.wellcome article h1{font-family:trench ;font-size: 2rem;}
+
+/* ANIMATION */
+.wellcome article p::after, .wellcome article h1::after{
+  content: '|';
+  opacity: 1;
+  margin-left: 5px;
+  display: inline-block;
+  animation: blink .7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* CHALLENGES */
+.challenges{background-color: rgb(0, 0, 0); background-size: cover;;width: 100%; height: 85vh; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around}
+
+.challenges li{width: 30%; text-align: center; }
+.challenges li i{font-size: 4rem; margin-bottom: 5px}
+.challenges li a h1{transition: all .2s}
+.challenges li h1{font-family:trench ;font-size: 3rem; text-align: center}
+.challenges li p{font-family:trench ;font-size: 1.5rem;  text-align: center}
+
+footer{background-color: rgb(0, 0, 0); padding: 20px 50px; font-size: 1.1rem; height: 5vh; font-family: trench; display: flex; align-items: center}
